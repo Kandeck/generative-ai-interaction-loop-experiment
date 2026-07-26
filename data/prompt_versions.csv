@@ -1,0 +1,446 @@
+﻿提示词版本｜P0 → P1 → P2 → Final,,,,,,,,,,
+每一行是一版完整提示词。第三轮P2已并入本页；先看“修改原因与核心修订”，完整P2提示词保留在“完整提示词”列。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。,每一行是一版完整提示词。必须记录改动原因，避免只记录“改了提示词”而无法解释提示词如何参与判断和协商。
+,,,,,,,,,,
+版本ID,会话ID,版本顺序,版本阶段,完整提示词,改动类型,修改原因与核心修订,执行者,对应输出ID,证据编号,纳入分析
+PV-R1-009-P0,6,0,v0.0,"I have been meaning to do POV videos and thought why not come up with a modular prompt for these types of shots. Here is an attempt:
+
+2x2 grid, 16:9, ai inferred subjects: input = [athlete / sport_or_activity / action_beat / venue / camera_source] run extreme_pov_sports_extraction: sport_dna := infer rules, gear, surface, movement style, and athlete role athlete_dna := infer body type, uniform, equipment, posture, effort, and emotional intensity action_state := infer exact frozen moment: launch, strike, landing, sprint, collision, dodge, slide, swing, flip, or follow-through camera_position := infer ground-level, object-mounted, helmet-mounted, court-edge, underwater, snow-level, wheel-level, or player-facing pov lens_behavior := infer fisheye distortion, wide-angle stretch, close-focus blur, lens flare, dirt, water drops, grass, snow, dust, or scratches foreground_exaggeration := infer closest limb, equipment, wheel, board, glove, racket, hoof, fin, machine part, or object venue_geometry := infer stadium ring, court lines, arena lights, street barriers, ocean horizon, mountain slope, track curve, or gym ceiling surface_physics := infer turf compression, dust spray, court reflection, ice scrape, water splash, sand kickup, snow burst, or pavement grit lighting := infer sun glare, floodlights, backlight, harsh noon, neon, indoor spotlight, or natural overcast motion_physics := infer blur direction, body momentum, particles, shadow stretch, and speed cues render: a dramatic extreme pov action frame where the viewer feels physically inside the sport. forbidden: hard-coded sport, hard-coded cleat, hard-coded stadium, hard-coded grass, hard-coded ball, perfect clean framing, static pose, generic sports poster.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-009-01,R1-SEED-009-A,否
+PV-R1-009-P1,6,1,v0.1,"I have been meaning to do POV videos and thought why not come up with a modular prompt for these types of shots. Here is an attempt:
+
+2x2 grid, 16:9, ai inferred subjects: input = [athlete / sport_or_activity / action_beat / venue / camera_source] run extreme_pov_sports_extraction: sport_dna := infer rules, gear, surface, movement style, and athlete role athlete_dna := infer body type, uniform, equipment, posture, effort, and emotional intensity action_state := infer exact frozen moment: launch, strike, landing, sprint, collision, dodge, slide, swing, flip, or follow-through camera_position := infer ground-level, object-mounted, helmet-mounted, court-edge, underwater, snow-level, wheel-level, or player-facing pov lens_behavior := infer fisheye distortion, wide-angle stretch, close-focus blur, lens flare, dirt, water drops, grass, snow, dust, or scratches foreground_exaggeration := infer closest limb, equipment, wheel, board, glove, racket, hoof, fin, machine part, or object venue_geometry := infer stadium ring, court lines, arena lights, street barriers, ocean horizon, mountain slope, track curve, or gym ceiling surface_physics := infer turf compression, dust spray, court reflection, ice scrape, water splash, sand kickup, snow burst, or pavement grit lighting := infer sun glare, floodlights, backlight, harsh noon, neon, indoor spotlight, or natural overcast motion_physics := infer blur direction, body momentum, particles, shadow stretch, and speed cues render: a dramatic extreme pov action frame where the viewer feels physically inside the sport. forbidden: hard-coded sport, hard-coded cleat, hard-coded stadium, hard-coded grass, hard-coded ball, perfect clean framing, static pose, generic sports poster.
+
+【第一轮复核后建议补充的约束】
+使用16:9横向宽幅，并将画面严格分为横向2×2等分面板；固定四个面板的活动与顺序：左上山地自行车、右上冲浪、左下篮球扣篮、右下雪地滑行/单板；每格保持极限第一视角、前景器材夸张、运动瞬间冻结，不得改成长幅竖版、用击剑替换篮球或新增运动项目。",构图/动作,第一轮与公开结果图在构图/动作层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-009-01,R1-SEED-009-A,是
+PV-R1-010-P0,7,0,v0.0,"Ultra-realistic cinematic macro miniature photography, a vertical 2×3 collage (six panels) featuring the same tiny stylized man with a slightly oversized expressive head, finger-sized, enjoying a series of funny beach adventures. Every panel tells a different story while maintaining the same character and highly realistic visual style. Golden beach sand, turquoise ocean, warm summer sunlight, shallow depth of field, creamy bokeh, vibrant colors, dramatic cinematic lighting, ultra-detailed textures, DSLR quality, RAW photo, 8K, photorealistic, humorous expressions, no text, no watermark. Panel 1: The tiny man relaxes on a miniature wooden beach chair, hugging a gigantic coconut drink with a straw while a huge human hand gently places a tiny pink beach umbrella above him. His face shows exaggerated surprise and relief from the heat. Panel 2: The tiny man rides a miniature yellow bodyboard at the shoreline while a giant human hand pinches the back of his red shirt, pulling him away just as a foamy wave reaches him. Water splashes dramatically around him, creating a funny rescue moment. Panel 3: The tiny man sits nervously on the back of an enormous bright orange crab, shading his eyes with one hand while looking toward the horizon as if searching for help. The crab appears calm but gigantic compared to him. Panel 4: Standing on a smooth beach stone, the tiny man struggles to hold an oversized fishing rod that's deeply bent under the weight of a huge freshly caught fish hanging from the line. His body leans backward from the effort with an exaggerated shocked expression. Panel 5: Only the tiny man's head and shoulders stick out from a mound of beach sand while a giant blue plastic shovel, controlled by a huge human hand, pours more sand over him. His straw hat is tilted and his terrified yet comical facial expression creates a playful scene. Panel 6: The tiny man crouches safely inside an enormous open seashell like a natural shelter, reaching one hand outward with a dramatic expression while surrounded by scattered giant seashells on the beach. Soft sunlight illuminates the shell interior, creating a magical cinematic ending. Style: Hyper-realistic macro photography, forced perspective, miniature illusion, ultra-detailed skin textures, realistic sand grains, natural ocean waves, cinematic composition, perfect scale consistency, humorous storytelling, highly expressive face, warm summer color grading, professional advertising photography, vertical composition (4:5), no text, no logos, no watermark.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-010-01 / OUT-R1-010-02,R1-SEED-010-A、R1-SEED-010-B,否
+PV-R1-010-P1,7,1,v0.1,"Ultra-realistic cinematic macro miniature photography, a vertical 2×3 collage (six panels) featuring the same tiny stylized man with a slightly oversized expressive head, finger-sized, enjoying a series of funny beach adventures. Every panel tells a different story while maintaining the same character and highly realistic visual style. Golden beach sand, turquoise ocean, warm summer sunlight, shallow depth of field, creamy bokeh, vibrant colors, dramatic cinematic lighting, ultra-detailed textures, DSLR quality, RAW photo, 8K, photorealistic, humorous expressions, no text, no watermark. Panel 1: The tiny man relaxes on a miniature wooden beach chair, hugging a gigantic coconut drink with a straw while a huge human hand gently places a tiny pink beach umbrella above him. His face shows exaggerated surprise and relief from the heat. Panel 2: The tiny man rides a miniature yellow bodyboard at the shoreline while a giant human hand pinches the back of his red shirt, pulling him away just as a foamy wave reaches him. Water splashes dramatically around him, creating a funny rescue moment. Panel 3: The tiny man sits nervously on the back of an enormous bright orange crab, shading his eyes with one hand while looking toward the horizon as if searching for help. The crab appears calm but gigantic compared to him. Panel 4: Standing on a smooth beach stone, the tiny man struggles to hold an oversized fishing rod that's deeply bent under the weight of a huge freshly caught fish hanging from the line. His body leans backward from the effort with an exaggerated shocked expression. Panel 5: Only the tiny man's head and shoulders stick out from a mound of beach sand while a giant blue plastic shovel, controlled by a huge human hand, pours more sand over him. His straw hat is tilted and his terrified yet comical facial expression creates a playful scene. Panel 6: The tiny man crouches safely inside an enormous open seashell like a natural shelter, reaching one hand outward with a dramatic expression while surrounded by scattered giant seashells on the beach. Soft sunlight illuminates the shell interior, creating a magical cinematic ending. Style: Hyper-realistic macro photography, forced perspective, miniature illusion, ultra-detailed skin textures, realistic sand grains, natural ocean waves, cinematic composition, perfect scale consistency, humorous storytelling, highly expressive face, warm summer color grading, professional advertising photography, vertical composition (4:5), no text, no logos, no watermark.
+
+【第一轮复核后建议补充的约束】
+锁定六格叙事与同一角色：1椰子饮料+人手放伞，2红衣身体板救援，3巨大橙色螃蟹，4弯曲鱼竿与大鱼，5沙堆与蓝色铲子，6巨大贝壳避难；保持同一服装、面部和微缩尺度，不增加文字和水印。",动作,第一轮与公开结果图在动作层面存在轻微差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-010-01,R1-SEED-010-A、R1-SEED-010-B,是
+PV-R1-017-P0,8,0,v0.0,"Ultra-natural Korean-inspired ‘clean girl’ makeup with flawless porcelain skin, soft matte finish, subtle brightening under the eyes, natural skin texture preserved, feathered straight brows, taupe eyeshadow blended softly into the crease, thin brown winged eyeliner, curled lashes with light mascara, no heavy false lashes, large doe eyes enhanced with soft aegyo-sal, minimal contouring, lightly sculpted nose, soft peach-pink blush placed high on the cheeks, blurred gradient nude pink lips with a satin finish, delicate beauty marks on the face, fresh youthful appearance, black wavy hair with a center part, soft natural daylight, high-definition beauty photography, elegant, minimalistic, realistic, no heavy glam, no harsh contour, no bold lipstick, ethereal Korean beauty aesthetic, 8K ultra-realistic.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-017-01,R1-SEED-017-A,否
+PV-R1-017-P1,8,1,v0.1,"Ultra-natural Korean-inspired ‘clean girl’ makeup with flawless porcelain skin, soft matte finish, subtle brightening under the eyes, natural skin texture preserved, feathered straight brows, taupe eyeshadow blended softly into the crease, thin brown winged eyeliner, curled lashes with light mascara, no heavy false lashes, large doe eyes enhanced with soft aegyo-sal, minimal contouring, lightly sculpted nose, soft peach-pink blush placed high on the cheeks, blurred gradient nude pink lips with a satin finish, delicate beauty marks on the face, fresh youthful appearance, black wavy hair with a center part, soft natural daylight, high-definition beauty photography, elegant, minimalistic, realistic, no heavy glam, no harsh contour, no bold lipstick, ethereal Korean beauty aesthetic, 8K ultra-realistic.
+
+【第一轮复核后建议补充的约束】
+保留韩系清透妆容、桃色腮红、灰棕眼影、黑色长发和正面近景裁切；女孩必须穿黑色上衣或黑色连衣裙，不使用米白、奶油色或浅色上衣，背景保持低饱和室内光线。",主体/色彩,第一轮与公开结果图在主体/色彩层面存在轻微差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-017-01,R1-SEED-017-A,是
+PV-R1-018-P0,9,0,v0.0,"Use the uploaded image as the identity reference. Preserve 100% of the original face without any changes. Keep the exact same facial identity, facial structure, skin tone, hairstyle, hair color, hairline, beard, mustache, eyebrows, eyes, nose, lips, jawline, ears, glasses, expression, and overall recognizable appearance. Do not alter the age or facial proportions.
+
+Create an ultra-realistic premium studio portrait of the same person sitting confidently in a modern navy-blue velvet armchair. He is wearing a textured royal blue suit with a matching blue crew-neck t-shirt, white sneakers, and white socks. Keep the forearm tattoos, silver luxury wristwatch, and rings exactly as in the reference image. His elbows rest naturally on his thighs, hands relaxed together, looking directly into the camera with a calm, confident expression.
+
+The background is a smooth light-to-dark blue gradient with a giant bold dark-blue letter ""M"" behind him. Glossy reflective blue floor, soft cinematic studio lighting, symmetrical centered composition, shallow depth of field, luxury editorial fashion photography, hyper-realistic skin texture, HDR, 8K, ultra-detailed, premium commercial advertisement quality.
+
+Camera: Full-body portrait, eye-level, 85mm lens, f/2.8, ISO 100, vertical 4:5 aspect ratio.
+
+Negative Prompt:
+
+Do not change the face, hairstyle, beard, glasses, skin tone, age, facial proportions, or expression. No extra fingers, bad anatomy, blur, low quality, watermark, text, logo, cropped body, duplicate limbs, oversharpening, unrealistic skin, cartoon, CGI.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-018-01,R1-SEED-018-A,否
+PV-R1-018-P1,9,1,v0.1,"Use the uploaded image as the identity reference. Preserve 100% of the original face without any changes. Keep the exact same facial identity, facial structure, skin tone, hairstyle, hair color, hairline, beard, mustache, eyebrows, eyes, nose, lips, jawline, ears, glasses, expression, and overall recognizable appearance. Do not alter the age or facial proportions.
+
+Create an ultra-realistic premium studio portrait of the same person sitting confidently in a modern navy-blue velvet armchair. He is wearing a textured royal blue suit with a matching blue crew-neck t-shirt, white sneakers, and white socks. Keep the forearm tattoos, silver luxury wristwatch, and rings exactly as in the reference image. His elbows rest naturally on his thighs, hands relaxed together, looking directly into the camera with a calm, confident expression.
+
+The background is a smooth light-to-dark blue gradient with a giant bold dark-blue letter ""M"" behind him. Glossy reflective blue floor, soft cinematic studio lighting, symmetrical centered composition, shallow depth of field, luxury editorial fashion photography, hyper-realistic skin texture, HDR, 8K, ultra-detailed, premium commercial advertisement quality.
+
+Camera: Full-body portrait, eye-level, 85mm lens, f/2.8, ISO 100, vertical 4:5 aspect ratio.
+
+Negative Prompt:
+
+Do not change the face, hairstyle, beard, glasses, skin tone, age, facial proportions, or expression. No extra fingers, bad anatomy, blur, low quality, watermark, text, logo, cropped body, duplicate limbs, oversharpening, unrealistic skin, cartoon, CGI.
+
+【第一轮复核后建议补充的约束】
+生成一位英俊、干净利落、无胡子的年轻男性，不戴眼镜，穿深蓝色西装并保持正面坐姿；背景必须出现巨大的立体字母B，采用深蓝渐变的奢华棚拍环境，不替换成其他字母或带胡须人物。",主体,第一轮与公开结果图在主体层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-018-01,R1-SEED-018-A,是
+PV-R1-019-P0,10,0,v0.0,"4:5 Ultra-realistic candid iPhone photo of a beautiful young Korean woman standing at a traffic light.  Above the entire city floats a crystal-clear ocean where sharks, whales, and colorful fish swim peacefully overhead.  The impossible sight reflects across nearby glass buildings.  She never looks up.  Captured naturally.  Premium smartphone realism.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-019-01,R1-SEED-019-A,否
+PV-R1-019-P1,10,1,v0.1,"4:5 Ultra-realistic candid iPhone photo of a beautiful young Korean woman standing at a traffic light.  Above the entire city floats a crystal-clear ocean where sharks, whales, and colorful fish swim peacefully overhead.  The impossible sight reflects across nearby glass buildings.  She never looks up.  Captured naturally.  Premium smartphone realism.
+
+【第一轮复核后建议补充的约束】
+使用微俯拍的广角镜头与明显的近大远小透视；固定垂直构图：左侧交通灯柱向上延伸、下方低头看手机的年轻女性、上方覆盖城市的透明海洋与一条主要大型鲨鱼/海洋生物、后方玻璃建筑；减少无关鱼群和路牌文字，保留原图的单一超现实焦点。",构图,第一轮与公开结果图在构图层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-019-01,R1-SEED-019-A,是
+PV-R1-020-P0,11,0,v0.0,"2x2 grid, 16:9, do this for 4 famous movies: -- input: $ subject
+
+create temp view subject_analysis as
+select
+  infer_main_identity(:subject)          as identity,
+  infer_dynamic_pose(:subject)           as action_pose,
+  infer_power_or_function(:subject)      as motion_system,
+  infer_world_context(:subject)          as world,
+  infer_symbolic_details(:subject)       as symbols,
+  infer_study_points(:subject)           as closeups,
+  infer_short_title(:subject)            as title;
+
+create temp view parchment_board as
+select
+  build_action_study_sheet(
+    material = 'aged cream paper',
+    borders = 'thin technical crop marks and panel lines',
+    texture = 'ink stains, paper grain, pencil construction marks'
+  ) as board
+from subject_analysis;
+
+create temp view main_action as
+select
+  render_manga_subject(
+    identity,
+    pose = action_pose,
+    linework = 'black brush ink, scratch hatching, broken speed strokes',
+    energy = motion_system,
+    accent_color = 'muted blue, red, or sepia inferred from subject'
+  ) as hero
+from subject_analysis;
+
+create temp view atlas_layer as
+select
+  add_world_fragments(
+    world,
+    style = 'travel-poster landmarks, tiny city shapes, map labels, symbolic scenery',
+    placement = 'behind and around the main action'
+  ) as background_world,
+
+  add_title_and_stamps(
+    title,
+    style = 'bold poster heading, small seals, side labels, handwritten notes'
+  ) as title_system
+from subject_analysis;
+
+create temp view study_layer as
+select
+  add_inset_panels(
+    closeups,
+    panels = array[
+      'face or focal feature close-up',
+      'motion diagram',
+      'tool or accessory detail',
+      'alternate state',
+      'silhouette thumbnail'
+    ],
+    style = 'manga production notes'
+  ) as studies
+from subject_analysis;
+
+render
+  parchment_board.board,
+  atlas_layer.background_world,
+  main_action.hero center,
+  study_layer.studies around main_action.hero,
+  atlas_layer.title_system
+with
+  camera = 'flat illustrated production-board view',
+  palette = 'cream paper, black ink, gray wash, one restrained accent color',
+  mood = 'dynamic, analytical, legendary, worldbuilding-rich';
+
+-- output rules:
+-- 1. $ subject becomes the hero of a manga-style action dossier.
+-- 2. surround it with travel-poster-like world fragments and symbolic location details.
+-- 3. include inset panels for anatomy, expression, movement, tools, and alternate states.
+-- 4. use callouts, arrows, stamps, and notes as decorative production language.
+-- 5. preserve subject identity while making the page feel hand-drawn, kinetic, and collectible.
+-- 6. avoid polished photorealism, cute toy clay, full-color comic clutter, and empty layouts.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-020-01,R1-SEED-020-A,否
+PV-R1-020-P1,11,1,v0.1,"2x2 grid, 16:9, do this for 4 famous movies: -- input: $ subject
+
+create temp view subject_analysis as
+select
+  infer_main_identity(:subject)          as identity,
+  infer_dynamic_pose(:subject)           as action_pose,
+  infer_power_or_function(:subject)      as motion_system,
+  infer_world_context(:subject)          as world,
+  infer_symbolic_details(:subject)       as symbols,
+  infer_study_points(:subject)           as closeups,
+  infer_short_title(:subject)            as title;
+
+create temp view parchment_board as
+select
+  build_action_study_sheet(
+    material = 'aged cream paper',
+    borders = 'thin technical crop marks and panel lines',
+    texture = 'ink stains, paper grain, pencil construction marks'
+  ) as board
+from subject_analysis;
+
+create temp view main_action as
+select
+  render_manga_subject(
+    identity,
+    pose = action_pose,
+    linework = 'black brush ink, scratch hatching, broken speed strokes',
+    energy = motion_system,
+    accent_color = 'muted blue, red, or sepia inferred from subject'
+  ) as hero
+from subject_analysis;
+
+create temp view atlas_layer as
+select
+  add_world_fragments(
+    world,
+    style = 'travel-poster landmarks, tiny city shapes, map labels, symbolic scenery',
+    placement = 'behind and around the main action'
+  ) as background_world,
+
+  add_title_and_stamps(
+    title,
+    style = 'bold poster heading, small seals, side labels, handwritten notes'
+  ) as title_system
+from subject_analysis;
+
+create temp view study_layer as
+select
+  add_inset_panels(
+    closeups,
+    panels = array[
+      'face or focal feature close-up',
+      'motion diagram',
+      'tool or accessory detail',
+      'alternate state',
+      'silhouette thumbnail'
+    ],
+    style = 'manga production notes'
+  ) as studies
+from subject_analysis;
+
+render
+  parchment_board.board,
+  atlas_layer.background_world,
+  main_action.hero center,
+  study_layer.studies around main_action.hero,
+  atlas_layer.title_system
+with
+  camera = 'flat illustrated production-board view',
+  palette = 'cream paper, black ink, gray wash, one restrained accent color',
+  mood = 'dynamic, analytical, legendary, worldbuilding-rich';
+
+-- output rules:
+-- 1. $ subject becomes the hero of a manga-style action dossier.
+-- 2. surround it with travel-poster-like world fragments and symbolic location details.
+-- 3. include inset panels for anatomy, expression, movement, tools, and alternate states.
+-- 4. use callouts, arrows, stamps, and notes as decorative production language.
+-- 5. preserve subject identity while making the page feel hand-drawn, kinetic, and collectible.
+-- 6. avoid polished photorealism, cute toy clay, full-color comic clutter, and empty layouts.
+
+【第一轮复核后建议补充的约束】
+使用16:9横向宽幅，将画面严格组织为横向2×2档案面板，避免竖向长海报堆叠；固定四格主题与顺序：左上Star Wars/Darth Vader，右上Matrix/Neo，左下Indiana Jones，右下Batman；保持每格一个主角、左侧资料栏、米黄色旧纸张、黑色漫画线稿和局部彩色强调。",构图/主体,第一轮与公开结果图在构图/主体层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；P1已提交，但被生图服务安全策略拦截，未产生第二轮图片。,研究者/用户主动修改,未生成：生图服务安全策略拦截,R1-SEED-020-A,否
+PV-R1-021-P0,12,0,v0.0,"A scene featuring the woman  Face: serious focused expression, lips slightly open. Hair: pulled back into sleek tight bun. Pose: close-up portrait, hand with leather glove near lips, stylized gesture. Outfit: fitted shirt with chunky silver chain necklace; sporty sunglasses reflecting studio lights Lighting: cool studio tones with soft background, minimal shadows. Camera: macro portrait, ultra-sharp lens, centered framing. Mood: futuristic minimalism - cyber fashion editorial, bold and clean. Format: portrait 3:4",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-021-01,R1-SEED-021-A,否
+PV-R1-021-P1,12,1,v0.1,"A scene featuring the woman  Face: serious focused expression, lips slightly open. Hair: pulled back into sleek tight bun. Pose: close-up portrait, hand with leather glove near lips, stylized gesture. Outfit: fitted shirt with chunky silver chain necklace; sporty sunglasses reflecting studio lights Lighting: cool studio tones with soft background, minimal shadows. Camera: macro portrait, ultra-sharp lens, centered framing. Mood: futuristic minimalism - cyber fashion editorial, bold and clean. Format: portrait 3:4
+
+【第一轮复核后建议补充的约束】
+采用黑白高对比肖像：皮肤、头发、服装和背景均为灰阶；只保留虹膜的亮蓝色与嘴唇的鲜红色，黑色墨镜和手套保持纯黑；维持手指靠近嘴唇、银色链条和正面近景裁切。",色彩,第一轮与公开结果图在色彩层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-021-01,R1-SEED-021-A,是
+PV-R1-023-P0,13,0,v0.0,"Capture a cinematic, ethereal portrait series of a beautiful young woman with long, dark hair, posing gracefully in a sun-dappled, enchanted forest setting. The model is wearing a sophisticated off-the-shoulder forest green lace gown that perfectly complements the lush, natural surroundings. The scene is illuminated by soft, warm, dappled golden hour light filtering through the woodland canopy, highlighting the delicate textures of the lace and the serene expression on her face. Incorporate variations in the shots, such as the model gently brushing her hair back and holding a small, rustic bouquet of wildflowers near a small stone bridge over a quiet, sparkling stream. Use a shallow depth of field to create a soft, blurred background that emphasizes the model's elegance and the magical, tranquil atmosphere of the woodland landscape.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-023-01,R1-SEED-023-A,否
+PV-R1-023-P1,13,1,v0.1,"Capture a cinematic, ethereal portrait series of a beautiful young woman with long, dark hair, posing gracefully in a sun-dappled, enchanted forest setting. The model is wearing a sophisticated off-the-shoulder forest green lace gown that perfectly complements the lush, natural surroundings. The scene is illuminated by soft, warm, dappled golden hour light filtering through the woodland canopy, highlighting the delicate textures of the lace and the serene expression on her face. Incorporate variations in the shots, such as the model gently brushing her hair back and holding a small, rustic bouquet of wildflowers near a small stone bridge over a quiet, sparkling stream. Use a shallow depth of field to create a soft, blurred background that emphasizes the model's elegance and the magical, tranquil atmosphere of the woodland landscape.
+
+【第一轮复核后建议补充的约束】
+只生成一幅单一全身纵向肖像，不使用2×2拼贴、不分格、不重复人物；保留绿色蕾丝长裙、森林溪流、侧身回望、自然暖光与背景虚化，人物从头到脚完整可见。",构图,第一轮与公开结果图在构图层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-023-01,R1-SEED-023-A,是
+PV-R1-025-P0,14,0,v0.0,"Ultra-Realistic Korean CEO Office Portrait Prompt
+Use the uploaded reference image as the ONLY face reference. Preserve the girl's facial identity 100% accurately, including her exact facial proportions, soft almond-shaped eyes, natural eyebrows, delicate nose, glossy lips, fair glowing skin, messy high bun hairstyle, face-framing strands, and overall identity. Do not beautify, replace, or alter her face.
+Create an ultra-realistic luxury Korean CEO portrait inside a premium AI company office in Seoul. She is sitting confidently behind a modern executive desk, looking directly into the camera with a calm, intelligent smile and one hand gently resting under her chin.
+She wears a luxury tailored satin blazer suit (choose either elegant champagne pink or matte black) with a silk blouse underneath, delicate pearl earrings, a thin diamond necklace, and a luxury wristwatch. Her posture is graceful and professional.
+On the desk:
+Premium MacBook
+Minimal leather planner
+Luxury pen
+Crystal business award
+Glass nameplate engraved: CEO AI Innovation Group
+Designer coffee cup
+Fresh cherry blossom arrangement
+Background:
+Floor-to-ceiling glass windows overlooking the Seoul skyline with N Seoul Tower
+Blooming cherry blossom trees outside
+Modern luxury office interior with warm wood, marble, and gold accents
+Elegant illuminated wall logo reading: AI Innovation Group
+Lighting:
+Soft golden morning sunlight entering through the windows
+Cinematic rim light
+Natural shadows
+Premium luxury atmosphere
+Camera:
+Eye-level composition
+85mm DSLR lens
+f/1.4 aperture
+Shallow depth of field
+Ultra-sharp focus on the face
+Realistic skin texture
+Magazine-quality editorial photography
+HDR
+Hyper-realistic 16K
+Vertical 4:5 aspect ratio
+Negative Prompt: cartoon, anime, CGI, blurry, low quality, bad anatomy, extra fingers, distorted hands, duplicate objects, oversaturated colors, unrealistic lighting, watermark, logo errors, text artifacts, face swap, identity change, plastic skin.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-025-01,R1-SEED-025-A,否
+PV-R1-025-P1,14,1,v0.1,"Ultra-Realistic Korean CEO Office Portrait Prompt
+Use the uploaded reference image as the ONLY face reference. Preserve the girl's facial identity 100% accurately, including her exact facial proportions, soft almond-shaped eyes, natural eyebrows, delicate nose, glossy lips, fair glowing skin, messy high bun hairstyle, face-framing strands, and overall identity. Do not beautify, replace, or alter her face.
+Create an ultra-realistic luxury Korean CEO portrait inside a premium AI company office in Seoul. She is sitting confidently behind a modern executive desk, looking directly into the camera with a calm, intelligent smile and one hand gently resting under her chin.
+She wears a luxury tailored satin blazer suit (choose either elegant champagne pink or matte black) with a silk blouse underneath, delicate pearl earrings, a thin diamond necklace, and a luxury wristwatch. Her posture is graceful and professional.
+On the desk:
+Premium MacBook
+Minimal leather planner
+Luxury pen
+Crystal business award
+Glass nameplate engraved: CEO AI Innovation Group
+Designer coffee cup
+Fresh cherry blossom arrangement
+Background:
+Floor-to-ceiling glass windows overlooking the Seoul skyline with N Seoul Tower
+Blooming cherry blossom trees outside
+Modern luxury office interior with warm wood, marble, and gold accents
+Elegant illuminated wall logo reading: AI Innovation Group
+Lighting:
+Soft golden morning sunlight entering through the windows
+Cinematic rim light
+Natural shadows
+Premium luxury atmosphere
+Camera:
+Eye-level composition
+85mm DSLR lens
+f/1.4 aperture
+Shallow depth of field
+Ultra-sharp focus on the face
+Realistic skin texture
+Magazine-quality editorial photography
+HDR
+Hyper-realistic 16K
+Vertical 4:5 aspect ratio
+Negative Prompt: cartoon, anime, CGI, blurry, low quality, bad anatomy, extra fingers, distorted hands, duplicate objects, oversaturated colors, unrealistic lighting, watermark, logo errors, text artifacts, face swap, identity change, plastic skin.
+
+【第一轮复核后建议补充的约束】
+保持女性CEO坐在桌后、人物位于画面右侧偏中、左侧窗景与首尔塔、右后方AI INNOVATION GROUP墙面标识、前景透明CEO桌牌和笔记本电脑；所有英文标识按原图拼写，避免新增无法辨识的品牌文字。",文字/构图,第一轮与公开结果图在文字/构图层面存在轻微差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-025-01,R1-SEED-025-A,是
+PV-R1-026-P0,15,0,v0.0,"A premium Coca-Cola advertising poster featuring a single ice-cold Coca-Cola can standing perfectly centered on a seamless deep crimson red background. The aluminum can is covered with realistic condensation droplets and illuminated by dramatic cinematic studio lighting. Behind the can, a soft spotlight creates a glowing red gradient, while the can casts a perfectly aligned shadow that transforms into the silhouette of an elegant royal crown floating above, symbolizing royalty and dominance. Minimal luxury composition with generous negative space, ultra-clean product photography, glossy metallic reflections, realistic textures, high-end commercial branding, award-winning creative advertisement, photorealistic, hyper-detailed, 8K, premium beverage campaign, sharp focus, luxury poster design. Small Coca-Cola logo centered at the top. Minimal white tagline at the bottom: “Not just a drink. The King of Every Thirst.” No extra objects, no clutter, premium print-ready layout.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-026-01,R1-SEED-026-A,否
+PV-R1-026-P1,15,1,v0.1,"A premium Coca-Cola advertising poster featuring a single ice-cold Coca-Cola can standing perfectly centered on a seamless deep crimson red background. The aluminum can is covered with realistic condensation droplets and illuminated by dramatic cinematic studio lighting. Behind the can, a soft spotlight creates a glowing red gradient, while the can casts a perfectly aligned shadow that transforms into the silhouette of an elegant royal crown floating above, symbolizing royalty and dominance. Minimal luxury composition with generous negative space, ultra-clean product photography, glossy metallic reflections, realistic textures, high-end commercial branding, award-winning creative advertisement, photorealistic, hyper-detailed, 8K, premium beverage campaign, sharp focus, luxury poster design. Small Coca-Cola logo centered at the top. Minimal white tagline at the bottom: “Not just a drink. The King of Every Thirst.” No extra objects, no clutter, premium print-ready layout.
+
+【第一轮复核后建议补充的约束】
+中央主体必须是细长的高瓶可乐/高瓶罐，明显高于普通横向饮料罐，保持纵向修长比例；王冠阴影完整位于瓶体上方，顶部保留Coca-Cola标识，底部广告语分两行：Not just a drink. / The King of Every Thirst.；保持红色渐变背景与冷凝水细节。",主体/比例,第一轮与公开结果图在主体/比例层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-026-01,R1-SEED-026-A,是
+PV-R1-028-P0,16,0,v0.0,"> Ultra-realistic editorial fashion portrait of a young woman standing beside a large glass storefront at blue hour in a modern city. The glass creates subtle reflections and layered double-exposure effects, while distant traffic produces soft red and white light trails, colorful bokeh, and cinematic motion blur. She wears an oversized charcoal-black blazer over a fitted black top with light-wash high-waisted denim jeans, silver hoop earrings, and a loose effortless updo with wispy face-framing strands. Calm, confident expression, direct eye contact, natural makeup, relaxed pose with one hand in pocket. Reflections blend naturally across the glass without obscuring facial features. Soft on-camera flash freezes the subject while the city remains blurred from a slow shutter. Premium editorial fashion photography, Vogue campaign aesthetic, authentic urban atmosphere, natural skin texture, high dynamic range, realistic reflections, shallow depth of field, subtle chromatic aberration, dreamy glow, rich contrast, muted cool tones with warm neon accents, 85mm lens, f/1.8, 1/10s slow shutter, ISO 400, cinematic color grading, ultra-detailed, photorealistic, 8K, no CGI, no illustration, no text, no watermark.",无改动,以公开提示词作为第一轮复现起点；结果见轮次对比总表。,研究者/用户主动修改,OUT-R1-028-01,R1-SEED-028-A,否
+PV-R1-028-P1,16,1,v0.1,"> Ultra-realistic editorial fashion portrait of a young woman standing beside a large glass storefront at blue hour in a modern city. The glass creates subtle reflections and layered double-exposure effects, while distant traffic produces soft red and white light trails, colorful bokeh, and cinematic motion blur. She wears an oversized charcoal-black blazer over a fitted black top with light-wash high-waisted denim jeans, silver hoop earrings, and a loose effortless updo with wispy face-framing strands. Calm, confident expression, direct eye contact, natural makeup, relaxed pose with one hand in pocket. Reflections blend naturally across the glass without obscuring facial features. Soft on-camera flash freezes the subject while the city remains blurred from a slow shutter. Premium editorial fashion photography, Vogue campaign aesthetic, authentic urban atmosphere, natural skin texture, high dynamic range, realistic reflections, shallow depth of field, subtle chromatic aberration, dreamy glow, rich contrast, muted cool tones with warm neon accents, 85mm lens, f/1.8, 1/10s slow shutter, ISO 400, cinematic color grading, ultra-detailed, photorealistic, 8K, no CGI, no illustration, no text, no watermark.
+
+【第一轮复核后建议补充的约束】
+使用城市玻璃橱窗前的半身至大腿近景，并明确加入双重曝光/叠影效果：同一女性的本体与半透明重复人像在玻璃中错位重叠，形成可辨识的两层面部和身体轮廓；背景为夜间城市车流光轨与霓虹虚化，不改成普通街拍全身照。",构图/风格,第一轮与公开结果图在构图/风格层面存在明显差异偏差，建议把关键约束前置并显式化；P1目前为建议版，尚未生成验证图。；第二轮已执行并生成结果。,研究者/用户主动修改,OUT-R2-028-01,R1-SEED-028-A,是
+PV-R2-001-P2,1,2,v0.2 / P2,"“2x2 grid, do this for 4 famous scientists { Instructions: SUBJECT // Build a gesture field G(x,y) from the subject’s inferred motion and attitude. G = ∇(pose_energy($ SUBJECT)) + ∇×(attitude_curl($ SUBJECT)) // Streamlines of G become the primary sketch lines: tapered, overlapping, confident. // Focal features (eyes, hands) sit at critical points of |G|. // Cel‑shadow patches = regions where ∇·G > threshold, filled with flat soft‑blue/grey. // Secondary study crops: placed along the perpendicular gradient of G at lower density. // Palette: warm beige, cream, charcoal, grey, soft blue (auto‑sampled from subject’s inferred mood). // Background: pure white, slight framing marks from contour of G at canvas edge. // Rendering: rough ink brush with visible construction strokes, no smoothing. }”
+
+【第一轮复核后建议补充的约束】
+严格锁定2×2网格与四格分配：四位科学家各占一个独立面板，每格只保留一位主肖像，不出现跨格中心大图、重叠拼接或额外第五主体；保留原图的米白纸面、蓝灰色速写、构造线与科学器材线索。
+
+【第三轮复核后建议的P2约束】
+将最终画布比例固定为1:1正方形；保留已修正的2×2四格布局、四位科学家各占一个独立面板、米白纸面与蓝灰速写风格，不因改成正方形而压缩、裁掉或合并任一面板。",比例/尺寸,第二轮复核：第二轮画面主体与构图已基本正确，但最终画布需要改为1:1正方形。；P2核心修订：将最终画布比例固定为1:1正方形；保留已修正的2×2四格布局、四位科学家各占一个独立面板、米白纸面与蓝灰速写风格，不因改成正方形而压缩、裁掉或合并任一面板。,研究者/用户主动修改,OUT-R3-001-01,R3-SEED-001-A,是
+PV-R2-002-P2,2,2,v0.2 / P2,"An ultra-realistic luxury royal fantasy portrait framed as a symmetrical premium playing card. Overlaid across the entire image is a dense pattern of complex mathematical and physics equations (such as calculus integrals, algebra formulas, and physics laws) glowing in a vibrant, semi-transparent ice-blue color.
+Central subject: A breathtaking young Caucasian white queen with delicate facial features, serene expression, fair skin tone, light-colored eyes and natural beauty. She has long, silky straight ash-beige balayage hair, professionally pressed smooth with luxurious volume, featuring subtle diamond iridescent shimmer illuminated by cinematic rim lighting.
+Attire & Jewelry: She wears an opulent ice-blue royal queen gown with a fully covered high neckline, completely covering neck and chest without any exposed skin, long embroidered sleeves, elegant structured shoulders, luxurious crystal embroidery, platinum silver threadwork, sapphire gemstones, and intricate beadwork. She wears an elaborate platinum and sapphire diamond crown, matching sapphire chandelier earrings, diamond rings, a sapphire bracelet, and an extravagant sapphire-and-diamond royal necklace.
+Pose & Details: Perfect anatomically correct hands, neatly rendered realistic fingers without distortion or malformation. She confidently holds a beautifully detailed vintage Queen of Hearts playing card between elegant fingers, while her other hand gracefully rests near her waist.
+Frame & Background: The portrait is enclosed inside an ornate luxury Queen of Hearts playing card frame featuring intricate gold filigree, embossed metallic ornaments, ruby heart emblems, and platinum accents. A complete border composed entirely of realistic fire, molten flames, floating glowing embers, sparks, cinematic smoke, and heat distortion surrounds all four edges. The background is a dark charcoal gray luxury studio backdrop with soft atmospheric haze.
+Lighting & Style: Soft cinematic key light combined with warm orange rim lighting from the surrounding flames. Volumetric lighting, HDR illumination, hyper-realistic reflections and soft shadows. 85mm lens style, f/1.8 shallow depth of field, Vogue editorial fashion campaign aesthetic, ultra-sharp focus on the face, 8K resolution, masterpiece quality.
+
+【第三轮复核后建议的P2约束】
+将Queen of Hearts人物扑克牌放在人物胸口正中央，卡面完整朝向镜头、位于身体中轴线上并清晰可见；保持皇后、火焰边框、公式、冰蓝礼服和手部自然，避免将卡牌移到肩侧、腰侧或画面边缘。",主体/构图,第二轮复核：人物扑克牌需要放在胸口正中，而不是偏向身体一侧。；P2核心修订：将Queen of Hearts人物扑克牌放在人物胸口正中央，卡面完整朝向镜头、位于身体中轴线上并清晰可见；保持皇后、火焰边框、公式、冰蓝礼服和手部自然，避免将卡牌移到肩侧、腰侧或画面边缘。,研究者/用户主动修改,OUT-R3-002-01,R3-SEED-002-A,是
+PV-R2-007-P2,4,2,v0.2 / P2,"premium ultra-realistic studio portrait featuring a stylish young child in an elegant all-white outfit, captured in a modern luxury photoshoot. The composition combines multiple creative poses in one frame: one large cinematic side-profile close-up wearing gold aviator sunglasses, one smiling front-facing waist-up portrait, and one full-body standing pose with hands in pockets on a marble pedestal. Alongside the portraits, the child is also playfully interacting with giant glossy 3D gold letters spelling ""ZAR NAB"", sitting, standing, and climbing on the letters. Soft beige and light gray gradient background with subtle watercolor splash effects, warm natural studio lighting, volumetric light rays from above, luxurious minimal aesthetic, perfect facial details, realistic skin texture, sharp focus, shallow depth of field, high-end fashion photography, premium editorial style, 8K, ultra-HD,
+
+【第一轮复核后建议补充的约束】
+使用横向16:9宽幅构图，巨型金色立体字母沿画面横向铺开，人物围绕并坐、站、攀爬在字母上；将“ZAR NAB”作为必须完整、连续、可读的唯一文字序列，不改成竖向海报或多格肖像拼贴，不让人物遮挡关键字母；保留白色服装、奢华摄影棚与米灰背景。
+
+【第三轮复核后建议的P2约束】
+画面中必须有且只有6个小朋友，六人的视觉尺度保持一致，人物头身比例和占画面面积基本相同；禁止前景出现超大的特写儿童，禁止把个别孩子放大成主角，六人应共同围绕横向金色字母形成均衡的16:9构图。",构图/主体,第二轮复核：第二轮画面方向已修正，但6个小朋友的视觉尺寸不一致，部分人物过大。；P2核心修订：画面中必须有且只有6个小朋友，六人的视觉尺度保持一致，人物头身比例和占画面面积基本相同；禁止前景出现超大的特写儿童，禁止把个别孩子放大成主角，六人应共同围绕横向金色字母形成均衡的16:9构图。,研究者/用户主动修改,OUT-R3-007-01,R3-SEED-007-A,是
+PV-R2-008-P2,5,2,v0.2 / P2,"Create a premium vertical 2:3 collectible travel bookmark featuring {destination}. The bookmark should be a tall, rounded-corner cardstock bookmark resting at a subtle 7° clockwise angle on a warm cream textured background with generous negative space. The bookmark has realistic paper thickness, soft embossed texture, smooth rounded edges, and a centered punch hole with a short braided tassel whose colors are inspired by {USA}. Add soft natural shadows to make it feel like a real handcrafted souvenir. The upper two-thirds of the bookmark showcases a breathtaking layered papercraft diorama of {USA}, highlighting its most iconic landmarks, landscapes, architecture, flora, and cultural elements. Build the scene using stacked paper layers with visible cut edges, realistic paper textures, dimensional shadows, and rich handcrafted detail. The scene should immediately evoke the destination while remaining elegant and uncluttered. Use a vibrant destination-inspired color palette while maintaining a premium handcrafted aesthetic. At the top, use large hand-painted brush lettering similar to a modern travel poster. Headline: EXPLORE {USA} Below the title, include a short travel-inspired tagline (6–10 words) that captures the spirit of the destination. The lower third transitions into a soft ivory panel with subtle cultural decorative accents inspired by {USA}. Section title: YOUR {USA} EXPERIENCE Include three premium 3D clay miniature cards with rounded corners and soft shadows representing: Iconic Landmarks Nature & Scenic Beauty Local Cuisine or Culture Each clay miniature should have a handcrafted matte finish with charming proportions and vibrant colors. Add a large rounded call-to-action button reading: START EXPLORING Decorate the bookmark subtly using motifs inspired by {USA}, such as geometric borders, traditional patterns, native flowers, leaves, waves, symbols, or architectural details. Keep these accents elegant and minimal. The overall style should feel like a luxury travel keepsake, combining: layered papercraft premium 3D clay miniatures handcrafted paper textures soft natural lighting realistic shadows collectible souvenir aesthetic warm studio photography highly detailed vibrant whimsical yet sophisticated ultra-realistic 8K quality Avoid mobile app UI elements, device frames, navigation icons, hearts, menus, or interface buttons. The final composition should look like a premium handcrafted bookmark photographed on a tabletop, suitable for a luxury travel collection.
+
+【第三轮复核后建议的P2约束】
+覆盖此前关于PARIS、埃菲尔铁塔和巴黎地标的设定，本轮目的地统一改为USA。明信片顶部标题必须为EXPLORE USA；画面中必须出现自由女神像、白宫、洛杉矶红色大桥等美国标志性建筑；下方标题改为YOUR USA EXPERIENCE。禁止出现巴黎、埃菲尔铁塔、凯旋门、圣心大教堂等法国地标，保留原图的旅行明信片/书签式纸艺结构。",主体/文字,第二轮复核：目标应为美国，不是巴黎；第二轮需要改正目的地和标志性建筑。；P2核心修订：覆盖此前关于PARIS、埃菲尔铁塔和巴黎地标的设定，本轮目的地统一改为USA。明信片顶部标题必须为EXPLORE USA；画面中必须出现自由女神像、白宫、洛杉矶红色大桥等美国标志性建筑；下方标题改为YOUR USA EXPERIENCE。禁止出现巴黎、埃菲尔铁塔、凯旋门、圣心大教堂等法国地标，保留原图的旅行明信片/书签式纸艺结构。,研究者/用户主动修改,OUT-R3-008-01,R3-SEED-008-A,是
+PV-R2-017-P2,8,2,v0.2 / P2,"Ultra-natural Korean-inspired ‘clean girl’ makeup with flawless porcelain skin, soft matte finish, subtle brightening under the eyes, natural skin texture preserved, feathered straight brows, taupe eyeshadow blended softly into the crease, thin brown winged eyeliner, curled lashes with light mascara, no heavy false lashes, large doe eyes enhanced with soft aegyo-sal, minimal contouring, lightly sculpted nose, soft peach-pink blush placed high on the cheeks, blurred gradient nude pink lips with a satin finish, delicate beauty marks on the face, fresh youthful appearance, black wavy hair with a center part, soft natural daylight, high-definition beauty photography, elegant, minimalistic, realistic, no heavy glam, no harsh contour, no bold lipstick, ethereal Korean beauty aesthetic, 8K ultra-realistic.
+
+【第一轮复核后建议补充的约束】
+保留韩系清透妆容、桃色腮红、灰棕眼影、黑色长发和正面近景裁切；女孩必须穿黑色上衣或黑色连衣裙，不使用米白、奶油色或浅色上衣，背景保持低饱和室内光线。
+
+【第三轮复核后建议的P2约束】
+人物保持黑色服装、韩系清透妆容和近景肖像，但脸部改为轻微三分之四侧脸，鼻梁和下颌呈现轻微侧向，不完全正面直视镜头；保持自然、克制的表情和柔和低饱和背景。",主体/构图,第二轮复核：黑色服装已修正，但人物需要微微侧脸，不应完全正面直视。；P2核心修订：人物保持黑色服装、韩系清透妆容和近景肖像，但脸部改为轻微三分之四侧脸，鼻梁和下颌呈现轻微侧向，不完全正面直视镜头；保持自然、克制的表情和柔和低饱和背景。,研究者/用户主动修改,OUT-R3-017-01,R3-SEED-017-A,是
+PV-R2-018-P2,9,2,v0.2 / P2,"Use the uploaded image as the identity reference. Preserve 100% of the original face without any changes. Keep the exact same facial identity, facial structure, skin tone, hairstyle, hair color, hairline, beard, mustache, eyebrows, eyes, nose, lips, jawline, ears, glasses, expression, and overall recognizable appearance. Do not alter the age or facial proportions.
+
+Create an ultra-realistic premium studio portrait of the same person sitting confidently in a modern navy-blue velvet armchair. He is wearing a textured royal blue suit with a matching blue crew-neck t-shirt, white sneakers, and white socks. Keep the forearm tattoos, silver luxury wristwatch, and rings exactly as in the reference image. His elbows rest naturally on his thighs, hands relaxed together, looking directly into the camera with a calm, confident expression.
+
+The background is a smooth light-to-dark blue gradient with a giant bold dark-blue letter ""M"" behind him. Glossy reflective blue floor, soft cinematic studio lighting, symmetrical centered composition, shallow depth of field, luxury editorial fashion photography, hyper-realistic skin texture, HDR, 8K, ultra-detailed, premium commercial advertisement quality.
+
+Camera: Full-body portrait, eye-level, 85mm lens, f/2.8, ISO 100, vertical 4:5 aspect ratio.
+
+Negative Prompt:
+
+Do not change the face, hairstyle, beard, glasses, skin tone, age, facial proportions, or expression. No extra fingers, bad anatomy, blur, low quality, watermark, text, logo, cropped body, duplicate limbs, oversharpening, unrealistic skin, cartoon, CGI.
+
+【第一轮复核后建议补充的约束】
+生成一位英俊、干净利落、无胡子的年轻男性，不戴眼镜，穿深蓝色西装并保持正面坐姿；背景必须出现巨大的立体字母B，采用深蓝渐变的奢华棚拍环境，不替换成其他字母或带胡须人物。
+
+【第三轮复核后建议的P2约束】
+保持英俊、无眼镜、无胡子的年轻男性、蓝色西装和背景巨型字母B；人物脸部改为轻微三分之四侧脸，视线略偏离镜头，不采用完全正面证件照式构图，同时保持正面坐姿和深蓝奢华棚拍环境。",主体/构图,第二轮复核：人物属性和背景B已修正，但人物需要微微侧脸。；P2核心修订：保持英俊、无眼镜、无胡子的年轻男性、蓝色西装和背景巨型字母B；人物脸部改为轻微三分之四侧脸，视线略偏离镜头，不采用完全正面证件照式构图，同时保持正面坐姿和深蓝奢华棚拍环境。,研究者/用户主动修改,OUT-R3-018-01,R3-SEED-018-A,是
+PV-R2-019-P2,10,2,v0.2 / P2,"4:5 Ultra-realistic candid iPhone photo of a beautiful young Korean woman standing at a traffic light.  Above the entire city floats a crystal-clear ocean where sharks, whales, and colorful fish swim peacefully overhead.  The impossible sight reflects across nearby glass buildings.  She never looks up.  Captured naturally.  Premium smartphone realism.
+
+【第一轮复核后建议补充的约束】
+使用微俯拍的广角镜头与明显的近大远小透视；固定垂直构图：左侧交通灯柱向上延伸、下方低头看手机的年轻女性、上方覆盖城市的透明海洋与一条主要大型鲨鱼/海洋生物、后方玻璃建筑；减少无关鱼群和路牌文字，保留原图的单一超现实焦点。
+
+【第三轮复核后建议的P2约束】
+保持微俯拍、广角镜头、左侧交通灯柱、上方透明海洋与城市玻璃建筑；人物必须穿白色上衣或白色衬衫，下身穿黑色长裤，避免整身黑衣或浅色裤子；人物继续位于画面下方并低头看手机。",主体/色彩,第二轮复核：微俯拍、广角和城市水下构图已基本正确，但服装应为白色上衣、黑色裤子。；P2核心修订：保持微俯拍、广角镜头、左侧交通灯柱、上方透明海洋与城市玻璃建筑；人物必须穿白色上衣或白色衬衫，下身穿黑色长裤，避免整身黑衣或浅色裤子；人物继续位于画面下方并低头看手机。,研究者/用户主动修改,OUT-R3-019-01,R3-SEED-019-A,是
+PV-R2-021-P2,12,2,v0.2 / P2,"A scene featuring the woman  Face: serious focused expression, lips slightly open. Hair: pulled back into sleek tight bun. Pose: close-up portrait, hand with leather glove near lips, stylized gesture. Outfit: fitted shirt with chunky silver chain necklace; sporty sunglasses reflecting studio lights Lighting: cool studio tones with soft background, minimal shadows. Camera: macro portrait, ultra-sharp lens, centered framing. Mood: futuristic minimalism - cyber fashion editorial, bold and clean. Format: portrait 3:4
+
+【第一轮复核后建议补充的约束】
+采用黑白高对比肖像：皮肤、头发、服装和背景均为灰阶；只保留虹膜的亮蓝色与嘴唇的鲜红色，黑色墨镜和手套保持纯黑；维持手指靠近嘴唇、银色链条和正面近景裁切。
+
+【第三轮复核后建议的P2约束】
+采用正面近景高对比肖像，画面上沿有意截掉一部分头顶和发髻；佩戴清晰可见的银色圆环耳环；使用从人物侧后方打入的侧背光，形成面部边缘光和轮廓光；保持黑白灰阶、亮蓝眼睛、鲜红嘴唇、黑色墨镜与黑手套。",构图/灯光/配饰,第二轮复核：黑白、蓝眼、红唇已修正，但需要裁掉部分头顶，使用银色圆环耳环，并加入侧背光。；P2核心修订：采用正面近景高对比肖像，画面上沿有意截掉一部分头顶和发髻；佩戴清晰可见的银色圆环耳环；使用从人物侧后方打入的侧背光，形成面部边缘光和轮廓光；保持黑白灰阶、亮蓝眼睛、鲜红嘴唇、黑色墨镜与黑手套。,研究者/用户主动修改,OUT-R3-021-01,R3-SEED-021-A,是
+PV-R2-028-P2,16,2,v0.2 / P2,"> Ultra-realistic editorial fashion portrait of a young woman standing beside a large glass storefront at blue hour in a modern city. The glass creates subtle reflections and layered double-exposure effects, while distant traffic produces soft red and white light trails, colorful bokeh, and cinematic motion blur. She wears an oversized charcoal-black blazer over a fitted black top with light-wash high-waisted denim jeans, silver hoop earrings, and a loose effortless updo with wispy face-framing strands. Calm, confident expression, direct eye contact, natural makeup, relaxed pose with one hand in pocket. Reflections blend naturally across the glass without obscuring facial features. Soft on-camera flash freezes the subject while the city remains blurred from a slow shutter. Premium editorial fashion photography, Vogue campaign aesthetic, authentic urban atmosphere, natural skin texture, high dynamic range, realistic reflections, shallow depth of field, subtle chromatic aberration, dreamy glow, rich contrast, muted cool tones with warm neon accents, 85mm lens, f/1.8, 1/10s slow shutter, ISO 400, cinematic color grading, ultra-detailed, photorealistic, 8K, no CGI, no illustration, no text, no watermark.
+
+【第一轮复核后建议补充的约束】
+使用城市玻璃橱窗前的半身至大腿近景，并明确加入双重曝光/叠影效果：同一女性的本体与半透明重复人像在玻璃中错位重叠，形成可辨识的两层面部和身体轮廓；背景为夜间城市车流光轨与霓虹虚化，不改成普通街拍全身照。
+
+【第三轮复核后建议的P2约束】
+保留女性黑色西装、城市玻璃橱窗、人物本体与半透明重复人像的双重曝光关系；加入轻微的低速快门感和非常克制的相机晃动，形成柔和的水平光轨、轻微拖影和不完全锐利的动态边缘，但不能严重模糊人物，也不能破坏双重曝光的面部识别。",风格/快门,第二轮复核：双重曝光和玻璃叠影已出现，但需要更明显的轻微晃动与低速快门感。；P2核心修订：保留女性黑色西装、城市玻璃橱窗、人物本体与半透明重复人像的双重曝光关系；加入轻微的低速快门感和非常克制的相机晃动，形成柔和的水平光轨、轻微拖影和不完全锐利的动态边缘，但不能严重模糊人物，也不能破坏双重曝光的面部识别。,研究者/用户主动修改,OUT-R3-028-01,R3-SEED-028-A,是
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,
+,,,,,,,,,,

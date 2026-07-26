@@ -1,0 +1,10 @@
+.DS_Store
+.env*
+*.xlsx
+*.xls
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.zip
+.codex*
